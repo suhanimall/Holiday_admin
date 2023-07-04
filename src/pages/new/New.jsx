@@ -35,7 +35,7 @@ const New = ({ inputs, title }) => {
       };
 
       //now user is sent to register
-      await axios.post("/auth/register", newUser);
+      await axios.post("https://holiday-backend-tj0d.onrender.com/api/auth/register", newUser);
     } catch (err) {
       console.log(err)
     }
