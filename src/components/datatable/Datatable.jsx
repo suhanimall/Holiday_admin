@@ -13,7 +13,7 @@ const Datatable = ({ columns }) => {
   const [list, setList] = useState([]);
 
   //for fetching the users
-  const { data, loading, error } = useFetch(`/${path}`);
+  const { data, loading, error } = useFetch(`https://holiday-backend-tj0d.onrender.com/api/${path}`);
 
   useEffect(() => {
     setList(data)
