@@ -24,7 +24,7 @@ const New = ({ inputs, title }) => {
     data.append("file", file)
     data.append("upload_preset", "upload")
     try {
-      const uploadRes = await axios.post("https://holiday-backend-tj0d.onrender.com/api/https://api.cloudinary.com/v1_1/dojtpdnyb/image/upload", data)
+      const uploadRes = await axios.post("https://api.cloudinary.com/v1_1/dojtpdnyb/image/upload", data)
 
       //Once image is uploaded we get it's url
       const { url } = uploadRes.data;
