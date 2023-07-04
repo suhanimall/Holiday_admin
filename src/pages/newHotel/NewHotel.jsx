@@ -51,7 +51,7 @@ const NewHotel = () => {
         rooms,
         photos: list,
       };
-      await axios.post("/hotels", newhotel)
+      await axios.post("https://holiday-backend-tj0d.onrender.com/api/hotels", newhotel)
 
     } catch (err) {
       console.log(err)
