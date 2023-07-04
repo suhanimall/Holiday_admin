@@ -16,7 +16,7 @@ const NewHotel = () => {
   const [rooms, setRooms] = useState([]);
 
   //for selecting rooms 
-  const { data, loading, error } = useFetch("/rooms")
+  const { data, loading, error } = useFetch("https://holiday-backend-tj0d.onrender.com/api/rooms")
 
   const handleChange = (e) => {
     setInfo((prev) => ({
